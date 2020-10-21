@@ -1,0 +1,40 @@
+h1{
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 300%;
+
+    font-family: "Noto Sans";
+}
+body{
+    background-color: lightgray;
+}
+h2{
+    background-color: grey;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    height: 40px;
+    font-size: 30px;
+    padding: 5px;
+    font-family: "Droid Sans";
+}
+.parrafos>img{
+    float: left;
+    padding: 0.4%;
+}
+.parrafos{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Droid Sans Georgian";
+    font-size: 120%;
+    text-align: justify;
+    text-indent: 3%;
+}
+em{
+    color: red;
+}
+strong{
+    background-color: white;
+}
