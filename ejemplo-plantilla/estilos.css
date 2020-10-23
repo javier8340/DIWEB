@@ -16,7 +16,7 @@ h2{
     color: white;
     height: 40px;
     font-size: 30px;
-    padding: 5px;
+    padding: 0.5%;
     font-family: "Droid Sans";
 }
 .parrafos>img{
@@ -27,10 +27,12 @@ h2{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
     font-family: "Droid Sans Georgian";
     font-size: 120%;
     text-align: justify;
     text-indent: 3%;
+
 }
 em{
     color: red;
