@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    border: 5px black solid;
+}
+p{
+    font-size: 1.5em;
+}
+.p1{
+    border-left: 20px red double;
+    border-top: 20px red double;
+}
+.p2{
+    border-left: 40px green solid;
+    border-top: 5px blue dashed;
+    border-bottom: 20px blue dashed;
+}
+.p3{
+    border: #FFD700 double;
+    border-width: 40px 10px;
+}
+.p4{
+    border-top: #00FF00 solid;
+    border-bottom: blue solid;
+    border-width: 20px 0;
+}
+.p5{
+
+    border-color: red black black black;
+    border-style: dashed dashed dotted dashed;
+    border-width: 40px;
+}
+.p6{
+    border-width: 10px 40px 20px 40px;
+    border-color: black black black red;
+    border-style: dotted solid dashed double;
+}
