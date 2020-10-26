@@ -1,0 +1,32 @@
+body{
+    background-color: #2D8652;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 3em;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.5em;
+
+}
+.p1{
+    color: white;
+    font-style: oblique;
+    font-family: Serif;
+}
+.p2{
+    color: #FFDFB3;
+
+}
+.p3{
+    color: #FF9F21;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+.p6{
+    color: #E6194D;
+    font-family: cursive;
+}
+
