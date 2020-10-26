@@ -1,0 +1,18 @@
+body{
+    background-color: #267352;
+    font-family: sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 5px 5px black;
+    text-transform: uppercase;
+}
+p{
+    border: 10px black solid;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    height: 3em;
+}
