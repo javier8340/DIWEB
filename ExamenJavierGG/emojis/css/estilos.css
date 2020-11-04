@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1{
+    font-size: 1.7em;
+}
+h2{
+    font-family: Courier LT Cyrillic Bold;
+}
+img{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+p{
+    font-size: 0.9em;
+    text-align: justify;
+
+}
+p>em{
+    font-weight: bold;
+
+}
+p>span{
+    color: red;
+}
+p>span.spn2{
+    color: yellow;
+}
+code{
+    font-size: 4em;
+}
