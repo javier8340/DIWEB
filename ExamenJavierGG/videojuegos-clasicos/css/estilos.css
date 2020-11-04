@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "monoton";
+    src: url("../fonts/monoton.woff2");
+}
+
+
+*{
+    margin: 0;
+}
+div#contenido{
+    /*height: 100%;*/
+    width: 100%;
+    position: absolute;
+    font-family: sans-serif;
+}
+
+#div1{
+
+    float: left;
+    width: 5%;
+    height: 65em;
+    background-image: url("../img/matrix.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+#divCentro{
+    float: left;
+    width: 80%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    padding: 0 5%;
+}
+#div3{
+    background-position: right;
+    float: right;
+    width: 5%;
+    height: 65em;
+    /*background-color: red;*/
+    background-image: url("../img/matrix2.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+h1{
+    color: green;
+    font-family: monoton, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    border-bottom: 2px solid white;
+    width: 100%;
+    background-color: #00FF00;
+    letter-spacing: 5px;
+}
+div.caja1{
+    float: left;
+    position: relative;
+    border: solid white 2px;
+}
+
+div.caja1 img{
+    /*width: 20%;*/
+
+    background-color: white;
+    padding: 4px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    border: #00FF00 4px solid;
+}
+div.caja1 div{
+    width: 75%;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+div.caja2{
+    margin: 3em 0;
+    float: left;
+    position: relative;
+    border: solid white 2px;
+}
+
+div.caja2 img{
+    /*width: 20%;*/
+
+    background-color: white;
+    padding: 4px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    border: #00FF00 4px solid;
+}
+div.caja2 div{
+    margin-left: 200px;
+    width: 75%;
+    text-align: justify;
+    padding: 20px;
+}
+p{
+    margin-top: 10px;
+}
+p em{
+    color: yellow;
+}
+p time{
+    color: green;
+}
+p author{
+    color: red;
+}
+
+div.author{
+    float: left;
+    width: 100%;
+    font-family: cursive;
+    margin-top: 20px;
+    border-color: green;
+    border-width: 10px 0;
+    border-style: solid;
+
+}
