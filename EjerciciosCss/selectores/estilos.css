@@ -1,0 +1,38 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: #D3D3D3;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+li.navegacion{
+    list-style: none;
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+li.navegacion a{
+    width: 50px;
+}
+li.navegacion a[rel=next]{
+
+}
+li.navegacion a[rel=tag]{
+
+}
+
+li.navegacion a[rel=bookmark]:before{
+    content: url("icons8-plus.svg");
+
+}
+li.navegacion a[rel=help]{
+
+}
+li.navegacion a[rel=help]{
+    background-color: red;
+}
+
