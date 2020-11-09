@@ -1,3 +1,7 @@
+body{
+    font-family: sans-serif;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -35,4 +39,6 @@ li.navegacion a[rel=help]{
 li.navegacion a[rel=help]{
     background-color: red;
 }
-
+li.navegacion a[content~="Avanzada"]{
+    background-color: #2D8652;
+}

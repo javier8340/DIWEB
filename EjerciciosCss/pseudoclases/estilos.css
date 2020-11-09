@@ -1,0 +1,27 @@
+h2:first-of-type{
+    color: red;
+}
+h2:first-letter{
+    color: red;
+}
+h2{
+    font-size: 2em;
+}
+li{
+    list-style: none;
+}
+li:nth-child(even)::after{
+    visibility:hidden;
+    cursor: pointer;
+}
+
+li:nth-child(even):hover:before{
+    content: 'línea par';
+}
+li:nth-child(odd):hover:after{
+    content:'línea impar';
+}
+
+li:first-of-type + li + li{
+    color: green;
+}
