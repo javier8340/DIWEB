@@ -1,0 +1,79 @@
+.container{
+    position: relative;
+}
+.caja{
+    width: 180px;
+    height: 180px;
+    background-color: #30B037;
+    color: #FFF;
+    text-align: center;
+    line-height: 180px;
+    margin: 15px;
+    float: left;
+    font-size: 18px;
+    font-family: Arial;
+    transition: transform ease-in-out 1s;
+}
+
+.tipo1:hover{
+    transition: transform ease-in-out 1s;
+   transform: scale(2,2);
+}
+
+
+.tipo2:hover{
+    transition: transform ease-in-out 1s;
+    transform: rotate(720deg);
+}
+
+
+.tipo3:hover{
+    transition: transform ease-in-out 1s;
+    transform: skew(10deg);
+}
+
+.tipo4:hover{
+    transition: transform ease-in-out 1s;
+    transform: skewX(10deg);
+}
+
+
+.tipo5:hover{
+    transition: transform ease-in-out 1s;
+    transform: skewY(10deg);
+}
+
+
+.tipo6:hover{
+    transition: transform ease-in-out 1s;
+    transform: translate(10px,40px);
+}
+
+
+.tipo7:hover{
+    transition: transform ease-in-out 1s;
+    transform: translateX(-10px);
+}
+
+
+.tipo8:hover{
+    transition: transform ease-in-out 1s;
+    transform: translateY(10px);
+}
+
+
+.tipo9:hover{
+    transition: transform ease-in-out 1s;
+    transform: perspective(20px) rotateY(5deg);
+}
+
+
+.tipo10:hover{
+    transition: transform ease-in-out 1s;
+    transform: perspective(100px) rotateX(10deg);
+}
+
+.tipo11:hover{
+    transition: transform ease-in-out 1s;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
