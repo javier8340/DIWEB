@@ -64,6 +64,7 @@
 
 .tipo9:hover{
     transition: transform ease-in-out 1s;
+
     transform: perspective(20px) rotateY(5deg);
 }
 
