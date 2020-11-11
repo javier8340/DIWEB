@@ -1,0 +1,100 @@
+.container{
+    position: relative;
+}
+.caja{
+    width: 180px;
+    height: 180px;
+    background-color: #30B037;
+    color: #FFF;
+    text-align: center;
+    line-height: 180px;
+    margin: 15px;
+    float: left;
+    font-size: 18px;
+    font-family: Arial;
+}
+.tipo1{
+    transition: background-color ease-in-out 1s;
+}
+.tipo1:hover{
+    background-color: #AF5D00;
+    transition: background-color ease-in-out 1s;
+}
+
+
+.tipo2{
+    transition: font-size ease-in-out 1s;
+}
+.tipo2:hover{
+    font-size: 2em;
+    transition: font-size ease-in-out 1s;
+}
+
+.tipo3{
+    transition: color ease-in-out 1s;
+}
+.tipo3:hover{
+    color: #FFD700;
+    transition: color ease-in-out 1s;
+}
+.tipo4{
+    transition: line-height ease-in-out 1s;
+}
+.tipo4:hover{
+    line-height: 2em;
+    transition: line-height ease-in-out 1s;
+}
+
+.tipo5{
+    transition: border-radius ease-in-out 1s;
+    border-radius: 0;
+}
+.tipo5:hover{
+    transition: border-radius ease-in-out 1s;
+    border-radius: 10px;
+}
+
+.tipo6{
+    transition: box-shadow ease-in-out 1s;
+    box-shadow: 0;
+}
+.tipo6:hover{
+    transition: box-shadow ease-in-out 1s;
+    box-shadow: #422B24 5px 5px;
+}
+
+.tipo7{
+    transition: opacity ease-in-out 1s;
+    opacity: 1;
+}
+.tipo7:hover{
+    transition: opacity ease-in-out 1s;
+    opacity: 0;
+}
+
+.tipo8{
+    transition: border ease-in-out 1s;
+    border: red 0 solid;
+}
+.tipo8:hover{
+    transition: border ease-in-out 1s;
+    border: red 3px solid;
+}
+
+.tipo9{
+    transition: margin ease-in-out 1s;
+
+}
+.tipo9:hover{
+    transition: margin ease-in-out 1s;
+    margin: 80px;
+}
+
+.tipo10{
+    transition: padding ease-in-out 1s;
+
+}
+.tipo10:hover{
+    transition: padding ease-in-out 1s;
+    padding: 50px;
+}
