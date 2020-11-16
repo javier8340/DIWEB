@@ -1,0 +1,10 @@
+a{
+  color: red;
+  @include test(rotate(90deg));
+}
+@mixin test($var){
+  transform: $var;
+  -moz-transform: $var;
+  -webkit-transform: $var;
+}
+
