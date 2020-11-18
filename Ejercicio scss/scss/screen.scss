@@ -1,0 +1,40 @@
+
+
+$textoColor : #eee;
+$textoHoverColor : #fff;
+$backgroundColor : #666;
+$liHoverColor : #888;
+
+
+@mixin colorDefecto() {
+  background-color: $backgroundColor;
+  color: $textoColor;
+}
+
+@mixin colorHover() {
+    background-color: $liHoverColor;
+    color: $textoHoverColor;
+
+}
+
+@mixin boxSizing($sizing){
+  -moz-box-sizing: $sizing;
+  -webkit-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+@mixin transiciones($property,$duration,$timing : linear){
+  -moz-transition: $property $duration $timing;
+  -webkit-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+@mixin animaciones($nombre,$duration,$timing){
+  -moz-animation: $nombre $duration $timing;
+  -webkit-animation: $nombre $duration $timing;
+  animation: $nombre $duration $timing;
+
+}
+
+
+@import "menu";
+//@import "style";

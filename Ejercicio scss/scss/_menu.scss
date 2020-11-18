@@ -1,0 +1,32 @@
+
+
+@keyframes iluminar {
+  from {
+    background-color: $backgroundColor;
+    color: $textoColor;
+  }
+  to {
+    background-color: $liHoverColor;
+    color: $textoColor;
+  }
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+  nav{
+    @include colorDefecto();
+    @include boxSizing(content-box);
+    @include transiciones(background-color, 1s);
+  }
+}
+
+nav li:hover{
+  @include colorHover();
+}
+
+footer{
+  @include colorHover();
+  @include boxSizing(content-box);
+}

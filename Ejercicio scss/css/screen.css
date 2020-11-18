@@ -1,0 +1,39 @@
+@keyframes iluminar {
+  from {
+    background-color: #666;
+    color: #eee;
+  }
+  to {
+    background-color: #888;
+    color: #eee;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+body nav {
+  background-color: #666;
+  color: #eee;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -moz-transition: background-color 1s linear;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+nav li:hover {
+  background-color: #888;
+  color: #fff;
+}
+
+footer {
+  background-color: #888;
+  color: #fff;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/*# sourceMappingURL=screen.css.map */
