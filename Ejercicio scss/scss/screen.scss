@@ -23,12 +23,12 @@ $liHoverColor : #888;
   box-sizing: $sizing;
 }
 
-@mixin transiciones($property,$duration,$timing : linear){
+@mixin transiciones($property,$duration,$timing: linear){
   -moz-transition: $property $duration $timing;
   -webkit-transition: $property $duration $timing;
   transition: $property $duration $timing;
 }
-@mixin animaciones($nombre,$duration,$timing){
+@mixin animaciones($nombre,$duration,$timing: linear){
   -moz-animation: $nombre $duration $timing;
   -webkit-animation: $nombre $duration $timing;
   animation: $nombre $duration $timing;

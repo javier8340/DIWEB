@@ -12,6 +12,15 @@ body {
   padding: 0;
   margin: 0;
 }
+body header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  color: #444;
+  background-color: #eee;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 body nav {
   background-color: #666;
   color: #eee;
@@ -22,18 +31,66 @@ body nav {
   -webkit-transition: background-color 1s linear;
   transition: background-color 1s linear;
 }
-
-nav li:hover {
-  background-color: #888;
-  color: #fff;
+body nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
-footer {
+body nav > ul {
+  width: 100%;
+  height: 32px;
+  background-color: #666;
+  color: #eee;
+}
+body nav li.categoria {
+  float: left;
+}
+body nav li.categoria > a {
+  -moz-transition: padding 0.4s ease-out;
+  -webkit-transition: padding 0.4s ease-out;
+  transition: padding 0.4s ease-out;
+}
+body nav li.categoria:hover > a {
+  padding: 10px 20px;
+}
+body nav li.categoria:hover ul.submenu {
+  height: 100px;
+}
+body nav a {
+  background-color: #666;
+  color: #eee;
+  text-decoration: none;
+  width: 160px;
+  padding: 7px 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+body nav a:hover {
   background-color: #888;
   color: #fff;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+  -moz-animation: iluminar 0.4s linear;
+  -webkit-animation: iluminar 0.4s linear;
+  animation: iluminar 0.4s linear;
+}
+body nav ul.submenu {
+  -moz-transition: height 0.5s ease-out;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+}
+body footer {
+  background-color: #666;
+  color: #eee;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=screen.css.map */
