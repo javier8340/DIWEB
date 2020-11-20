@@ -2,4 +2,44 @@
   margin: 0;
 }
 
+body {
+  background-color: #72bb53;
+}
+
+header {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background-color: #629c44;
+}
+header > img {
+  float: left;
+  width: 30%;
+  height: 60px;
+  margin: 45px 50px;
+}
+header h1 {
+  float: left;
+  width: 40%;
+  height: 50px;
+  margin: 45px 0;
+  text-align: center;
+}
+header div#idioma {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+}
+header div#idioma * {
+  float: left;
+  margin-left: 10px;
+}
+header div#idioma img {
+  height: 20px;
+  width: 30px;
+}
+
 /*# sourceMappingURL=estilos.css.map */
