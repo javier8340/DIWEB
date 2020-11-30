@@ -58,6 +58,37 @@ div#seleccion div.seccion {
 
 nav {
   background-color: #14550a;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+nav ul {
+  user-select: none;
+  width: 85%;
+  margin: 0 auto;
+  list-style: none;
+  height: 30px;
+  padding: 15px;
+}
+nav ul li {
+  width: 18%;
+  border: black 1px solid;
+  height: 25px;
+  background-color: #0c9b3b;
+  float: left;
+  padding: 0.5%;
+}
+nav ul li.active {
+  background-color: #30B037;
+}
+nav ul li:hover {
+  background-color: #2D8652;
+}
+nav ul li:active {
+  background-color: #0c9b3b;
+}
+nav:before {
+  clear: both;
 }
 
 /*# sourceMappingURL=estilos.css.map */

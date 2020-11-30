@@ -1,4 +1,35 @@
 //menu de navegación
 nav{
   background-color: #14550a;
+  position: relative;
+  float: left;
+  width: 100%;
+  ul{
+    user-select: none;
+    width: 85%;
+    margin: 0 auto;
+    list-style: none;
+    height: 30px;
+    padding: 15px;
+    li{
+      width: 18%;
+      border: black 1px solid;
+      height: 25px;
+      background-color: #0c9b3b;
+      float: left;
+      padding: 0.5%;
+      &.active{
+        background-color: #30B037;
+      }
+      &:hover{
+        background-color: #2D8652;
+      }
+      &:active{
+        background-color: #0c9b3b;
+      }
+    }
+  }
+  &:before{
+    clear: both;
+  }
 }
