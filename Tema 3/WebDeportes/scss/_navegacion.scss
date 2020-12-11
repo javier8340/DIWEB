@@ -2,14 +2,14 @@
 nav{
   background-color: #14550a;
   position: relative;
-  float: left;
+  //float: left;
   width: 100%;
   ul{
     user-select: none;
     width: 85%;
     margin: 0 auto;
     list-style: none;
-    height: 30px;
+    height: 40px;
     padding: 15px;
     li{
       width: 18%;
@@ -18,11 +18,21 @@ nav{
       background-color: #0c9b3b;
       float: left;
       padding: 0.5%;
+      @include transiciones(background-color,0.4s);
+      transition: box-shadow ease-in-out 1s;
+      box-shadow: 0;
       &.active{
+        //TODO hacer animacion
+        @include transiciones(background-color,0.4s);
+
         background-color: #30B037;
       }
       &:hover{
+        //TODO hacer animacion
+        @include transiciones(background-color,0.4s);
         background-color: #2D8652;
+        transition: box-shadow ease-in-out 1s;
+        box-shadow: #422B24 5px 5px;
       }
       &:active{
         background-color: #0c9b3b;

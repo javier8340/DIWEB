@@ -24,6 +24,7 @@ header h1 {
   height: 50px;
   margin: 45px 0;
   text-align: center;
+  text-shadow: 2px 2px gray;
 }
 header div#idioma {
   position: absolute;
@@ -59,7 +60,6 @@ div#seleccion div.seccion {
 nav {
   background-color: #14550a;
   position: relative;
-  float: left;
   width: 100%;
 }
 nav ul {
@@ -67,7 +67,7 @@ nav ul {
   width: 85%;
   margin: 0 auto;
   list-style: none;
-  height: 30px;
+  height: 40px;
   padding: 15px;
 }
 nav ul li {
@@ -77,18 +77,82 @@ nav ul li {
   background-color: #0c9b3b;
   float: left;
   padding: 0.5%;
+  -moz-transition: background-color 0.4s linear;
+  -webkit-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+  transition: box-shadow ease-in-out 1s;
+  box-shadow: 0;
 }
 nav ul li.active {
+  -moz-transition: background-color 0.4s linear;
+  -webkit-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
   background-color: #30B037;
 }
 nav ul li:hover {
+  -moz-transition: background-color 0.4s linear;
+  -webkit-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
   background-color: #2D8652;
+  transition: box-shadow ease-in-out 1s;
+  box-shadow: #422B24 5px 5px;
 }
 nav ul li:active {
   background-color: #0c9b3b;
 }
 nav:before {
   clear: both;
+}
+
+#contenedor {
+  width: 90%;
+  position: relative;
+  margin: 30px auto;
+  padding: 30px;
+}
+#contenedor .caja {
+  position: relative;
+  margin: 30px 10px;
+  height: 200px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#contenedor .caja * {
+  height: 90%;
+  float: left;
+}
+#contenedor .caja p {
+  width: 75%;
+  padding: 5px;
+}
+#contenedor .caja img {
+  width: 15%;
+  padding: 1%;
+}
+#contenedor .caja:nth-child(even) img {
+  float: right;
+}
+
+footer {
+  height: 300px;
+  background-color: #629c44;
+}
+footer h3 {
+  width: 100%;
+  float: left;
+}
+footer p, footer img {
+  height: 80%;
+  padding: 3px;
+}
+footer p {
+  width: 75%;
+  float: left;
+}
+footer img {
+  width: 20%;
+  float: left;
 }
 
 /*# sourceMappingURL=estilos.css.map */
