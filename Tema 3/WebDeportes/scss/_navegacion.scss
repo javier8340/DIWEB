@@ -22,13 +22,11 @@ nav{
       transition: box-shadow ease-in-out 1s;
       box-shadow: 0;
       &.active{
-        //TODO hacer animacion
         @include transiciones(background-color,0.4s);
-
         background-color: #30B037;
       }
       &:hover{
-        //TODO hacer animacion
+
         @include transiciones(background-color,0.4s);
         background-color: #2D8652;
         transition: box-shadow ease-in-out 1s;
