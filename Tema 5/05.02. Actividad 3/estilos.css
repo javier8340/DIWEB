@@ -1,0 +1,29 @@
+.item{
+    background-color: red;
+    /*margin: 10px;*/
+    display:  flow;
+}
+@media (min-width: 0px){ /*xs*/
+    header{
+        background-color: brown;
+    }
+}
+@media (min-width: 576px){ /*sm*/
+    header{
+        background-color: blue;
+    }
+}
+@media (min-width: 768px){ /*md*/
+    header{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 992px) {/*lg*/
+    header{
+        background-color: green;
+    }
+}
+
+
+
