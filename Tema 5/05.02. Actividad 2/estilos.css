@@ -1,0 +1,19 @@
+div.row >div{
+    height: 80px;
+}
+
+nav{
+    background-color: #29FE2F;
+}
+#divNumeros > div:not(.blank){
+    background-color: #88ABDD;
+    border: 1px solid black;
+    /*margin: 15px;/*/
+}
+#divLetras div{
+    background-color: #664a1f;
+    border: 1px solid black;
+}
+.device{
+    background-color: #006eff;
+}
