@@ -2,7 +2,7 @@ div.row >div{
     height: 80px;
 }
 
-nav{
+nav,footer{
     background-color: #29FE2F;
 }
 #divNumeros > div:not(.blank){
@@ -16,4 +16,12 @@ nav{
 }
 .device{
     background-color: #006eff;
+}
+#caras div{
+    background-color: #FE9A5D;
+    text-align: center;
+}
+
+#caras div:not(:first-child){
+    font-weight: bold;
 }
