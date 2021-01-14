@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Componentes de Boostrap 4: Pagination</title>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="js/luckmoshyJqueryPagnation.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="page col-16 p-4" id="container-pagnation1">
+        <div class="font-weight-bold text-white bg-dark p-3">Introducción <span class="float-right">Paginación</span></div>
+        <div class="p-5 bg-white">
+            La paginación es una lista de items para navegar en una web. <br>
+            muestro un ejemplo de paginación a continuación <br>
+
+            <div class="p-2">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <pre><code class="language-html" data-lang="html">&lt;nav aria-label="Page navigation example"&gt;
+  &lt;ul class="pagination">
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page col-16 p-4" id="container-pagnation2">
+        <div class="font-weight-bold text-white bg-dark p-3">Uso de Iconos <span class="float-right">Paginación</span></div>
+        <div class="p-5 bg-white">
+            Puedes customizar este componente añadiendo iconos a los botones
+
+            <div class="p-2">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <pre><code class="language-html" data-lang="html">
+&lt;nav aria-label="Page navigation example"&gt;
+    &lt;ul class="pagination"&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#" aria-label="Previous"&gt;
+                &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+                &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#" aria-label="Next"&gt;
+                &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+                &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page col-16 p-4" id="container-pagnation3">
+        <div class="font-weight-bold text-white bg-dark p-3">Desactivar y activar celdas <span class="float-right">Paginación</span></div>
+        <div class="p-5 bg-white">
+            Usando las clases <code>disabled</code> y <code>active</code> podemos marcar una celda como activa o desabilitada
+
+            <div class="p-2">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <pre><code class="language-html" data-lang="html">
+&lt;nav aria-label="Page navigation example"&gt;
+    &lt;ul class="pagination"&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#" aria-label="Previous"&gt;
+                &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+                &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item disabled"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item active"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#" aria-label="Next"&gt;
+                &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+                &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="page col-16 p-4" id="container-pagnation4">
+        <div class="font-weight-bold text-white bg-dark p-3">Sizing <span class="float-right">Paginación</span></div>
+        <div class="p-5 bg-white">
+            Para poder cambiar de tamaño el paginador se usan las clases <code>pagination-lg</code> y <code>pagination-sm</code>
+            <div class="p-2">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <pre><code class="language-html" data-lang="html">&lt;nav aria-label="Page navigation example"&gt;
+  &lt;ul class="pagination pagination-sm">
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                </code>
+            </pre>
+            <div class="p-2">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <pre><code class="language-html" data-lang="html">&lt;nav aria-label="Page navigation example"&gt;
+  &lt;ul class="pagination pagination-lg">
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page col-16 p-4" id="container-pagnation5">
+        <div class="font-weight-bold text-white bg-dark p-3">Alineación <span class="float-right">Paginación</span></div>
+        <div class="p-5 bg-white">
+            Para alinear el item se usan las clases <code>justify-content-end</code>, <code>justify-content-end</code> y <code>justify-content-start</code>
+            <div class="p-2">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <pre><code class="language-html" data-lang="html">&lt;nav aria-label="Page navigation example"&gt;
+  &lt;ul class="pagination justify-content-end">
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                </code>
+            </pre>
+            <div class="p-2">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <pre><code class="language-html" data-lang="html">&lt;nav aria-label="Page navigation example"&gt;
+  &lt;ul class="pagination justify-content-center">
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page col-16 p-4" id="container-pagnation6">
+        <div class="font-weight-bold text-white bg-dark p-3">Uso de Plugins <span class="float-right">Paginación</span></div>
+        <div class="p-5 bg-white">
+            Para la paginación existen distintos plugins que usan este componente de Boostrap, y añadiendole JQuery se consigue un funcionamiento completo, ejemplos:
+            <div class="p-2">
+                <a target="_blank" href="https://www.jqueryscript.net/other/Paginate-Data-Bootstrap-4-Pagination-Buzina.html">Plugin 1</a>
+                <div>
+                    <iframe src="https://www.jqueryscript.net/demo/Paginate-Data-Bootstrap-4-Pagination-Buzina/" height="500px" frameborder="1" class="col-8"></iframe>
+                </div>
+
+                <a target="_blank" href="https://www.jqueryscript.net/demo/luckmoshy-bootstrap-pagination/">Plugin 2</a>
+                <div>
+
+                    <iframe src="https://www.jqueryscript.net/demo/luckmoshy-bootstrap-pagination/" height="500px" frameborder="1" class="col-8"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <ul id="luckmoshy" class="pagination justify-content-center fixed-bottom">
+
+    </ul>
+</div>
+
+
+<!--<nav aria-label="Page navigation example" id="pagination">-->
+<!--    <ul class="pagination">-->
+<!--        <li class="page-item"><a class="page-link" href="#">Previous</a></li>-->
+<!--        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--        <li class="page-item"><a class="page-link" href="#">Next</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+
+</body>
+</html>

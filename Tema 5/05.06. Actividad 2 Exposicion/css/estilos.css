@@ -1,0 +1,9 @@
+.page{
+    display: none;
+}
+.page-active{
+    display: block;
+}
+body{
+    background-image: url("../img/background.png");
+}
