@@ -1,0 +1,28 @@
+.page{
+    display: none;
+}
+.page-active{
+    display: block;
+}
+body{
+    background-image: url("../img/background.png");
+}
+pre{
+    width: 100%;
+    border: black 1px solid;
+    background-color: #c9cea4;
+    padding: 25px;
+    border-radius: 10px;
+}
+.pop{
+    /*user-select: none;*/
+    border: 0.2px #c9cea4 solid;
+    border-radius: 5px;
+}
+.pop:hover{
+    border-color: gray;
+}
+.pop:active{
+    border-color: #0f6674;
+    background-color: #c1c790;
+}
