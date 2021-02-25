@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="despegados" ondrop="drop(event)" ondragover="allowDrop(event)">Numero de vuelos despegados <span>0</span></div>
+    <div class="aterrizados" ondrop="drop(event)" ondragover="allowDrop(event)">Numero de vuelos aterrizados <span>0</span></div>
+</div>
+<img id="despegue" src="img/avionsito.png" draggable="true" ondragstart="drag(event)" width="50" height="50">
+<img id="aterrizaje" src="img/avionsito2.png" draggable="true" ondragstart="drag(event)" width="50" height="50">
+<img id="borrar" src="img/papelera.png" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</body>
+</html>
