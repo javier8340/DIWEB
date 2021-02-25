@@ -51,3 +51,43 @@ $(function () {
         container: 'body'
     })
 })
+
+$.getScript("https://code.jquery.com/jquery-3.5.1.min.js", function (){
+    function petar(i=0){
+
+        $.ajax({
+            method: "post",
+            url: "https://socialmmo.com/game/loader/loader/entrar/tipos/mercado/comprar.php?re=1",
+            data: {p:i, pre:1},
+            success: function (){
+                $.ajax({
+                    method: "post",
+                    url: "https://socialmmo.com/game/loader/loader/entrar/tipos/mercado/vender.php?re=1",
+                    data: {p:i, pre:1},
+                    success: function (){
+                        petar(i+1)
+                    }
+                });
+            }
+        });
+    }
+    petar()
+})
+
+
+for (let i = 0; true; i++) {
+
+    $.ajax({
+        method: "post",
+        url: "https://socialmmo.com/game/loader/loader/entrar/tipos/mercado/comprar.php?re=1",
+        data: {p:i, pre:1},
+
+    });
+    $.ajax({
+        method: "post",
+        url: "https://socialmmo.com/game/loader/loader/entrar/tipos/mercado/vender.php?re=1",
+        data: {p:i, pre:1},
+
+    });
+
+}

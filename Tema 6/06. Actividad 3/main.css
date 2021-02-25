@@ -1,0 +1,29 @@
+@keyframes test1 {
+    from {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+    to{
+        transform: rotate(360deg);
+        background-color: blue;
+        top: calc(100% - 50px);
+        left: calc(100% - 50px);
+    }
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border: 2px black solid;
+
+}
+.item{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+
+    animation: test1 infinite 5s ease-in-out;
+}
