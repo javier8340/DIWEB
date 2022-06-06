@@ -17,12 +17,12 @@
     var span = document.getElementById("span");
     var evn = document.getElementById("env");
     var text = "";
-    text += window.Telegram.WebView.initParams + " - "
-    
+    text += window.Telegram.WebView.initParams.text + " - "
+
     span.textContent = " content: " + text;
     window.Telegram.WebView.onEvent((evento) => {
         evn.textContent = evento
     })
-    
+
 </script>
 </html>
