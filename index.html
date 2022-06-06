@@ -11,6 +11,22 @@
 <span id="evn">-evn-</span>
 </body>
 <script>
+    function print_r(theObj){
+        if(theObj.constructor == Array || theObj.constructor == Object){
+            document.write("<ul>")
+            for(var p in theObj){
+                if(theObj[p].constructor == Array || theObj[p].constructor == Object){
+                    document.write("<li>["+p+"] => "+typeof(theObj)+"</li>");
+                    document.write("<ul>")
+                    print_r(theObj[p]);
+                    document.write("</ul>")
+                } else {
+                    document.write("<li>["+p+"] => "+theObj[p]+"</li>");
+                }
+            }
+            document.write("</ul>")
+        }
+    }
     window.Telegram.WebApp.sendData("data");
     // window.Telegram.WebApp.expand();
     // window.Telegram.WebView.receiveEvent()
@@ -23,6 +39,7 @@
     window.Telegram.WebView.onEvent((evento) => {
         evn.textContent = evento
     })
+    print_r(window.Telegram)
 
 </script>
 </html>
