@@ -7,10 +7,22 @@
 </head>
 <body>
     hello
+<span id="span">-span-</span>
+<span id="evn">-evn-</span>
 </body>
 <script>
     window.Telegram.WebApp.sendData("data");
-    window.Telegram.WebApp.expand();
-    window.Telegram.WebView.receiveEvent()
+    // window.Telegram.WebApp.expand();
+    // window.Telegram.WebView.receiveEvent()
+    var span = document.getElementById("span");
+    var evn = document.getElementById("env");
+    var text = "";
+    text += window.Telegram.WebView.initParams + " - "
+    
+    span.textContent = " content: " + text;
+    window.Telegram.WebView.onEvent((evento) => {
+        evn.textContent = evento
+    })
+    
 </script>
 </html>
