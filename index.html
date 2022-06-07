@@ -27,7 +27,7 @@
             document.write("</ul>")
         }
     }
-    window.Telegram.WebApp.sendData("data");
+
     // window.Telegram.WebApp.expand();
     // window.Telegram.WebView.receiveEvent()
     var span = document.getElementById("span");
@@ -39,6 +39,9 @@
     window.Telegram.WebView.onEvent((evento) => {
         evn.textContent = evento
     })
+    // window.Telegram.WebView.ready();
+    window.Telegram.WebApp.colorScheme = "#dbdb1c"
+    window.Telegram.WebApp.sendData("data");
     print_r(window.Telegram)
 
 </script>
