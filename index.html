@@ -7,6 +7,7 @@
 </head>
 <body>
     hello
+    <button id="send">send Data</button>
 <span id="span">-span-</span>
 <span id="evn">-evn-</span>
 </body>
@@ -32,6 +33,7 @@
     // window.Telegram.WebView.receiveEvent()
     var span = document.getElementById("span");
     var evn = document.getElementById("env");
+    var send = document.getElementById("send");
     var text = "";
     text += window.Telegram.WebView.initParams.text + " - "
 
@@ -41,9 +43,12 @@
     })
     // window.Telegram.WebView.ready();
     window.Telegram.WebApp.colorScheme = "#dbdb1c"
-    window.Telegram.WebApp.sendData("data");
+    
     print_r(window.Telegram.WebApp)
     print_r(window.Telegram.WebView)
+    send.onclick = function (evn) {
+        window.Telegram.WebApp.sendData("datos enviados");
+    }
 
 </script>
 </html>
