@@ -6,28 +6,12 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    hello
-    <button id="send">send Data</button>
+hello
+<button id="send">send Data</button>
 <span id="span">-span-</span>
 <span id="evn">-evn-</span>
 </body>
 <script>
-    function print_r(theObj){
-        if(theObj.constructor == Array || theObj.constructor == Object){
-            document.write("<ul>")
-            for(var p in theObj){
-                if(theObj[p].constructor == Array || theObj[p].constructor == Object){
-                    document.write("<li>["+p+"] => "+typeof(theObj)+"</li>");
-                    document.write("<ul>")
-                    print_r(theObj[p]);
-                    document.write("</ul>")
-                } else {
-                    document.write("<li>["+p+"] => "+theObj[p]+"</li>");
-                }
-            }
-            document.write("</ul>")
-        }
-    }
 
     // window.Telegram.WebApp.expand();
     // window.Telegram.WebView.receiveEvent()
@@ -50,7 +34,20 @@
     send.onclick = function () {
         send.textContent = "Pressed" + i;
         i++
-        window.Telegram.WebApp.sendData("datos enviados");
+        fetch('http://127.0.0.1:8080/lang/messages/test', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Origin': 'http://127.0.0.1:8080',
+                'Access-Control-Allow-Origin:': '*'
+            },
+            body: JSON.stringify({
+                initData: window.Telegram.WebApp.initData
+
+            })
+        });
+        // window.Telegram.WebApp.sendData("datos enviados");
 
     }
 
